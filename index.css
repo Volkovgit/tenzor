@@ -325,6 +325,7 @@ input[type="radio"]:checked + label {
 .art_card_music {
   width: 25%;
   display: flex;
+  
   flex-wrap: wrap;
   position: relative;
 }
@@ -353,7 +354,7 @@ input[type="radio"]:checked + label {
 }
 
 .artist_card_text {
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -372,6 +373,8 @@ input[type="radio"]:checked + label {
 
 .play-button-outer {
   width: 10%;
+  display: flex;
+  justify-content: center;
 }
 
 .play-button {
@@ -414,4 +417,11 @@ input[type="radio"]:checked + label {
 
 .mr-t-1 {
   margin-top: 1%;
+}
+
+
+
+.svgPlayButton{
+  width:70%;
+  cursor: pointer;
 }
