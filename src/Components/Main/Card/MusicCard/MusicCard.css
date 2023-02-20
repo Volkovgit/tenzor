@@ -1,0 +1,41 @@
+.musicCard {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+
+.musicCard-text__name {
+  width: 100%;
+  font-weight: 700;
+  text-align: left;
+}
+
+.musicCard-text__artist {
+  width: 100%;
+  text-align: left;
+}
+
+.musicCard-text__type {
+  width: 100%;
+  text-align: left;
+  color:grey;
+}
+
+.musicCard-text {
+    margin-left: 2%;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-text__name {
+  display: inline-block;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  width: 100%;
+}
+

@@ -1,10 +1,12 @@
-import {htmlContainer} from './htmlContainer.js'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
 
-try {
-    htmlContainer().insertArtistIntoHTML();
-    htmlContainer().insertTracksIntoHtml();
-} catch (error) {
-    alert("Какие то проблемы :(\nПожалуйста, перезагрузите страницу или попробуйте зайти позже");
-}
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
