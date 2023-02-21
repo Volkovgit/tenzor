@@ -1,13 +1,13 @@
 import "./ArtistCard.css";
 import trackImg from './track_img.png'
 
-function ArtistCard() {
+function ArtistCard(props) {
   return (
-    <div class="card">
-    <img class="card__img" src={trackImg} alt="" />
-    <div class="card-text">
-      <p class="card-text__name">Kanye West</p>
-      <p class="card-text__type">hip-hop</p>
+    <div className="card">
+    <img className="card__img" src={trackImg} alt="" />
+    <div className="card-text">
+      <p className="card-text__name">{props.name}</p>
+      <p className="card-text__type">{props.type.join(', ')}</p>
     </div>
   </div>
   );
