@@ -74,7 +74,7 @@ function Main() {
           <div className="cardList-header__underline"></div>
           <div className="card-list grid-6col">
             {topAutorsList.map((card) => {
-              return <ArtistCard key={card.mbid+card.name} name={card.name} type={card.toptags}></ArtistCard>;
+              return <ArtistCard key={card.mbid+card.name} name={card.name} type={card.toptags} images={card.image}></ArtistCard>;
             })}
           </div>
         </div>
@@ -84,7 +84,7 @@ function Main() {
           <div className="card-list grid-3col">
             {
               topTrackList.map(track=>{
-                return <MusicCard key={track.artist.mbid + track.name} name={track.name} type={track.toptags}artist={track.artist}></MusicCard>
+                return <MusicCard key={track.artist.mbid + track.name} name={track.name} type={track.toptags}artist={track.artist} images={track.image}></MusicCard>
               })
             }
           </div>

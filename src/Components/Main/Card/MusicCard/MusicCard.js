@@ -1,10 +1,10 @@
 import "./MusicCard.css";
-import trackImg from './track_img.png'
 
 function MusicCard(props) {
+  console.log(props);
   return (
     <div className="musicCard">
-      <img className="musicCard__img" src={trackImg} alt="" />
+      <img className="musicCard__img" src={props.images[2]['#text']} alt="" />
       <div className="musicCard-text">
         <p className="musicCard-text__name">{props.name}</p>
         <p className="musicCard-text__artist">{props.artist.name}</p>

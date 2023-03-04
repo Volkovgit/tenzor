@@ -1,0 +1,103 @@
+.search {
+  width: 100%;
+}
+
+.search-header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+}
+
+.search-header__text {
+  width: 100%;
+}
+
+.btn_container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.radio_fieldlist {
+  display: flex;
+  border: none;
+  width: 100%;
+}
+
+.search-radio {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.search-separator {
+  margin-top: 1px;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked),
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label,
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  /* padding-left: 28px; */
+  line-height: 20px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  border-bottom: 2px solid brown;
+  height: 100%;
+}
+
+/* .radio_label {
+  font-size: 20px;
+} */
+.search-input {
+  width: 60%;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+.search-input__item {
+  width: 100%;
+  border: 2px #eeeeee solid;
+  border-radius: 3px;
+  font-size: 30px;
+}
+
+.search-input__item:focus {
+  outline: none;
+}
+
+.search-result {
+  width: 60%;
+  margin-left: 10%;
+}
+
+/* artist block */
+
+.block_header {
+  width: 100%;
+}
+
+.result-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.result-list-tracks{
+    display: flex;
+    flex-wrap: wrap;
+}

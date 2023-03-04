@@ -62,8 +62,8 @@ function Footer() {
                 </p>
             </div>
         </div>
-        <div class="footer-logo">
-          <p class="footer_logo_text white_text">Audioscrobbler</p>
+        <div className="footer-logo">
+          <p className="footer_logo_text white_text">Audioscrobbler</p>
           <img src={logo} alt="" />
         </div>
       </div>

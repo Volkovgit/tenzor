@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
-import logo from "./logo.png"
-import player from "./player.png"
-import search from './search.png'
+import logo from "./logo.png";
+import player from "./player.png";
+import search from "./search.png";
 
 function Header() {
   return (
@@ -10,32 +11,42 @@ function Header() {
         <img className="header-player__img" src={player} alt="" />
       </div>
       <div className="header-logo">
-        <a className="header-logo__item" href="./index.html">
+        <Link to="" className="header-logo__item">
           <img src={logo} alt="" />
-        </a>
+        </Link>
       </div>
       <nav className="header-nav">
         <div className="header-nav-container">
           <ul className="nav-list">
             <li className="nav-list__item">
-              <a href="./search.html" className="href">
+              <Link to="/search">
                 <img src={search} className="href__img" alt="" />
-              </a>
+              </Link>
             </li>
             <li className="nav-list__item">
-              <a href="#" className="href">Live</a>
+              <Link href="#" className="href">
+                Live
+              </Link>
             </li>
             <li className="nav-list__item">
-              <a href="#" className="href">Music</a>
+              <Link href="#" className="href">
+                Music
+              </Link>
             </li>
             <li className="nav-list__item">
-              <a href="#" className="href">Charts</a>
+              <Link href="#" className="href">
+                Charts
+              </Link>
             </li>
             <li className="nav-list__item">
-              <a href="#" className="href">Events</a>
+              <Link href="#" className="href">
+                Events
+              </Link>
             </li>
             <li className="nav-list__item">
-              <a href="#" className="href">Features</a>
+              <Link href="#" className="href">
+                Features
+              </Link>
             </li>
           </ul>
         </div>
