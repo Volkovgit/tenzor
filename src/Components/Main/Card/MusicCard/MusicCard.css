@@ -1,6 +1,7 @@
 .musicCard {
+  margin-top:5%;
   width: 100%;
-  height: 50%;
+  height: 100px;
   display: flex;
 }
 
