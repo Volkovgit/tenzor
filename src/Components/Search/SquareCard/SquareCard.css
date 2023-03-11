@@ -1,0 +1,28 @@
+.squareCard {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .squareCard__img {
+    width: 100%;
+  }
+  
+  .squareCard-description {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+  }
+  
+  .squareCard-description__artist {
+    width: 100%;
+    font-weight: 700;
+    color:white;
+  }
+  
+  .squareCard-description__listeners{
+      color:white;
+  }

@@ -1,0 +1,33 @@
+
+
+.card {
+  width: 80%;
+  margin-top: 5%;
+}
+
+.card__img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.card-text {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.card-text__name {
+  display: inline-block;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+}
+
+.card-text__type {
+  color: gray;
+}
